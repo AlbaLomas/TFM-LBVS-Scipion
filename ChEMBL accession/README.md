@@ -3,9 +3,9 @@ Compound data acquisition
 ![image](https://user-images.githubusercontent.com/83068588/175167107-ddd5e7d5-233c-4893-938c-1204a3218f7e.png)
 
 
-This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1].
+This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab [1].
 
-The first workflow protocol aims to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze.Programmatic access is provided by a Python library called ChEMBL webresource client.
+The first workflow protocol aims to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze.Programmatic access is provided by a Python library called ChEMBL webresource client [2].
 
 The protocol filters the compounds according to the following parameters:
 -	Uniprot ID: Uniprot code of the target molecule.
@@ -50,4 +50,6 @@ The result of the protocol is a number of compounds, also determined by the user
 
 
 [1] T001 · Compound data acquisition (ChEMBL). (s/f). Volkamerlab.Org. Recuperado el 22 de junio de 2022, de https://projects.volkamerlab.org/teachopencadd/talktorials/T001_query_chembl.html
+
+[2]Davies, M., Nowotka, M., Papadatos, G., Dedman, N., Gaulton, A., Atkinson, F., Bellis, L., & Overington, J. P. (2015). ChEMBL web services: streamlining access to drug discovery data and utilities. Nucleic Acids Research, 43(W1), W612-20. https://doi.org/10.1093/nar/gkv352![image](https://user-images.githubusercontent.com/83068588/175167817-f6972cf9-7804-4caa-90c3-10dace6b5f4f.png)
 
