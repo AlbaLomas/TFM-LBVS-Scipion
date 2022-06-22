@@ -1,6 +1,6 @@
 3D molecular structure comparison
 
-This folder contains the protocol code of Scipion and its associated script. The script is adapted from the code provided by Volkamer Lab[1].
+This folder contains the protocol code of Scipion and its associated script. Software tools for this protocol belong to the RDKit module rdkit.Chem.rdMolAlign module[1]. 
 
 The goal of this analysis is to use the shape of the query molecule/ligand in the search for similar structures. 
 The methods applied in the shape filtering are usually based on the calculation of distances, surface areas and/or volumes.
@@ -24,3 +24,6 @@ Before the calculation of RMSD and the Tanimoto and Protrude distances, it is ne
 
 
 No additional installation is required apart from Scipion-chem's own installation, all the necessary software to use the protocol is installed and launched with Scipion-chem.
+
+[1]rdkit.Chem.rdMolAlign module — The RDKit 2022.03.1 documentation. (s/f). Rdkit.org. Recuperado el 22 de junio de 2022, de https://www.rdkit.org/docs/source/rdkit.Chem.rdMolAlign.html
+
