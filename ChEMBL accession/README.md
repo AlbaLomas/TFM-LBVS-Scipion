@@ -1,10 +1,11 @@
 Compound data acquisition
 
+![image](https://user-images.githubusercontent.com/83068588/175167107-ddd5e7d5-233c-4893-938c-1204a3218f7e.png)
+
+
 This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1].
 
-The first workflow protocol aims to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze.
-The result of the protocol is the import of the obtained molecules, in SMILES format, into a SetOfSmallMolecules Scipion object, this import is key so that the molecules of the set can be used in the following protocols.
-
+The first workflow protocol aims to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze.Programmatic access is provided by a Python library called ChEMBL webresource client.
 
 The protocol filters the compounds according to the following parameters:
 -	Uniprot ID: Uniprot code of the target molecule.
@@ -39,8 +40,11 @@ d)	Ki: inhibition constant, the term is equivalent to the dissociation constant 
 
 - Organism of compound origin: it is recommended to choose human proteins; since the ultimate goal is to obtain possible molecules to be used as human drugs.
 
-The user will specify the search according to these parameters using the GUI of the protocol. The script performs different steps: firstly, it retrieves the ChEMBL ID of the compound with the highest affinity on the target; then, it obtains the bioactivity data of the affine compound similar molecules and filters them according to assay type, bioactivity measure, target type and organism of compound origin fields. 
+
+The user will specify the search according to these parameters using the GUI of the protocol. In cases where the type of assay chosen is a Binding assay, the script undertakes the following steps: firstly, it retrieves the ChEMBL ID of the compound with the highest affinity on the target; then, it obtains the bioactivity data of the affine compound similar molecules and filters them according to assay type, bioactivity measure, target type and organism of compound origin fields. 
 Next, for those molecules that have passed the screening, their structure is obtained in form of "canonical SMILES". After collecting the bioactivity and structural data for each molecule, the filter is performed according to the average bioactivity chosen. The adapted script is able to sort the obtained molecules in bioactivity ascending order independently of the chosen bioactivity measure.
+
+In all other cases the search is limited to filtering without screening for bioactivity. 
 
 The result of the protocol is a number of compounds, also determined by the user, that show activity against the target and have the highest bioactivity levels. If the user wants to obtain ALL compounds, the box corresponding to the final number of compounds must be left blank.
 
