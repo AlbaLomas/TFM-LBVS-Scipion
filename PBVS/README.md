@@ -1,4 +1,6 @@
 Consensus pharmacophore generation and pharmacophore-based screening
+
+
 <img width="1031" alt="image" src="https://user-images.githubusercontent.com/83068588/175160330-6bda04bb-8b71-4f21-bfbc-f84b5527c61e.png">
 
 This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1], and the second part of the protocol, Pharmacophore based Virtual Screening (PBVS) is performed using the tools provided by RDKit on https://github.com/rdkit/UGM_2016/blob/master/Notebooks/Stiefl_RDKitPh4FullPublication.ipynb.
