@@ -1,6 +1,6 @@
 PDB access and ligand extraction
 
-<img width="180" alt="image" src="https://user-images.githubusercontent.com/83068588/175131200-7e794edb-802e-4812-8e22-f86610852590.png">
+<img width="405" alt="Captura de pantalla 2022-05-29 a las 21 44 24" src="https://user-images.githubusercontent.com/83068588/175141769-792a9b8a-e053-4be5-b778-06b8e0956e8d.png">
 
 
 This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1]. 
