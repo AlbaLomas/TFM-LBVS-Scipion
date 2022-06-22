@@ -1,6 +1,6 @@
 PAINS (Pan-Assay INterference compoundS) analysis
 
-![image](https://user-images.githubusercontent.com/83068588/175040431-fbf09679-7b4c-4b36-837c-ff62dfba377e.png)
+![image](https://user-images.githubusercontent.com/83068588/175041529-212762fd-9f31-48eb-8d80-dbb19a3004a9.png)
 
 This folder contains the protocol code in Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1] and the code used for filtering by personal catalogue comes from https://github.com/iwatobipen/rdkit_pains.
 
