@@ -3,6 +3,9 @@ Fingerprint analysis protocol explores molecular 2D descriptors
 This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1].  
 
 Fingerprints are computational representations of molecules encoding chemical and molecular features in the form of 0 (absence of the feature) and 1 (presence of the feature).
+
+![image](https://user-images.githubusercontent.com/83068588/175054055-ca8cb9f3-6f3a-46a6-9344-546f656737ed.png)
+
 This protocol offer two different types of fingerprints for calculate: MACCS and Morgan.
 
 - MACCS (Molecular ACCess System): these fingerprints consist of 166 bits representing predefined structural fragments. At each position, the presence or absence of a fragment is reported.
