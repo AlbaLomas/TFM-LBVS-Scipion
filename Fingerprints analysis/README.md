@@ -27,5 +27,6 @@ The protocol requires a file with extension mol, mol2, pdb, sdf or smi and a tar
 
 No additional installation is required apart from Scipion-chem's own installation, all the necessary software to use the protocol is installed and launched with Scipion-chem.
 
+
 [1]T004 · Ligand-based screening: compound similarity. (s/f). Volkamerlab.Org. Recuperado el 22 de junio de 2022, de https://projects.volkamerlab.org/teachopencadd/talktorials/T004_compound_similarity.html
 
