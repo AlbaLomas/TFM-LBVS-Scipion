@@ -6,6 +6,8 @@ This protocol offer two different types of fingerprints for calculate: MACCS and
 
 The similarity between fingerprints is measured by different similarity coefficients, Tanimoto and Dice coefficients are the chosen ones. 
 
+<img width="371" alt="image" src="https://user-images.githubusercontent.com/83068588/175019169-b79a4f4a-0337-4d6e-8593-41c7e2505231.png">
+
 The protocol result is a SetOfSmallMolecules object (Scipion) that would contain those molecules that obtain a similarity result with the molecule used as target equal to or higher than the one set by the user using the type of fingerprint and similarity index specified in the protocol GUI.
 
 The protocol requires a file with extension mol, mol2, pdb, sdf or smi and a target molecule in SMILES format, in case the target is not in the analyzed set. 
