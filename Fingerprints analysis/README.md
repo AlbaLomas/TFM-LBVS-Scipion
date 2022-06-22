@@ -1,4 +1,4 @@
-Fingerprint analysis protocol explores molecular 2D descriptors.
+Fingerprint analysis protocol explores molecular 2D descriptors
 
 This folder contains the protocol code in Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1].  
 
