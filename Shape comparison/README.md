@@ -18,7 +18,8 @@ The similarity values that can be calculated using the script are:
 
 
 The protocol allows you to choose which coefficient you want to calculate and requires as input a SetOfSmallMolecules Scipion object which oly can be produced by a smi extension file. 
-The analysis result will be another SetOfSmallMolecules object with those molecules that have obtained a coefficient range specified by the user in the protocol GUI.
+
+Analysis result will be another SetOfSmallMolecules object with those molecules that have obtained a coefficient range specified by the user in the protocol GUI.
 Before the calculation of RMSD and the Tanimoto and Protrude distances, it is necessary to superimpose the structures which are to be compared. So far RDKit does not have a tool that performs an alignment prior to the calculation of similarity, so the results provided by these tools must be carefully analyzed by users.
 
 
