@@ -37,7 +37,12 @@ d)	Ki: inhibition constant, the term is equivalent to the dissociation constant 
 
 -	Target type: it is highly advisable that the chosen target type is "SINGLE PROTEIN", as the aim of the LVBS is to find compounds that have activity on a single target. Although it is possible to choose between other options.
 
-Organism of compound origin: it is recommended to choose human proteins; since the ultimate goal is to obtain possible molecules to be used as human drugs.
+- Organism of compound origin: it is recommended to choose human proteins; since the ultimate goal is to obtain possible molecules to be used as human drugs.
+
+The user will specify the search according to these parameters using the GUI of the protocol. The script performs different steps: firstly, it retrieves the ChEMBL ID of the compound with the highest affinity on the target; then, it obtains the bioactivity data of the affine compound similar molecules and filters them according to assay type, bioactivity measure, target type and organism of compound origin fields. 
+Next, for those molecules that have passed the screening, their structure is obtained in form of "canonical SMILES". After collecting the bioactivity and structural data for each molecule, the filter is performed according to the average bioactivity chosen. The adapted script is able to sort the obtained molecules in bioactivity ascending order independently of the chosen bioactivity measure.
+
+The result of the protocol is a number of compounds, also determined by the user, that show activity against the target and have the highest bioactivity levels. If the user wants to obtain ALL compounds, the box corresponding to the final number of compounds must be left blank.
 
 
 [1] T001 · Compound data acquisition (ChEMBL). (s/f). Volkamerlab.Org. Recuperado el 22 de junio de 2022, de https://projects.volkamerlab.org/teachopencadd/talktorials/T001_query_chembl.html
