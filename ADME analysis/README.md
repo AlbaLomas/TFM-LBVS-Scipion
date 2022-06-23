@@ -1,4 +1,4 @@
-**Qualitative evaluation of pharmacokinetic properties**
+# **Qualitative evaluation of pharmacokinetic properties**
 
 This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1] and another source code form oddt github (https://oddt.readthedocs.io/en/latest/_modules/oddt/virtualscreening.html).
 
