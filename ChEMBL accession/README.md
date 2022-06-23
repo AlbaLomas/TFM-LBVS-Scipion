@@ -48,6 +48,7 @@ In all other cases the search is limited to filtering without screening for bioa
 
 The result of the protocol is a number of compounds, also determined by the user, that show activity against the target and have the highest bioactivity levels. If the user wants to obtain ALL compounds, the box corresponding to the final number of compounds must be left blank.
 
+No additional installation is required apart from Scipion-chem own installation, all the necessary software to use the protocol is installed and launched with Scipion-chem.
 
 [1] T001 · Compound data acquisition (ChEMBL). (s/f). Volkamerlab.Org. Recuperado el 22 de junio de 2022, de https://projects.volkamerlab.org/teachopencadd/talktorials/T001_query_chembl.html
 
