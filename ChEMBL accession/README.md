@@ -1,16 +1,16 @@
-Compound data acquisition
+# **Compound data acquisition**
 
 ![image](https://user-images.githubusercontent.com/83068588/175167107-ddd5e7d5-233c-4893-938c-1204a3218f7e.png)
 
 
-This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab [1].
+This folder contains the protocol code of Scipion and the associated script. The script is adapted from the code provided by Volkamer Lab[1].
 
-The first workflow protocol aims to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze.Programmatic access is provided by a Python library called ChEMBL webresource client [2].
+Protocol aim is to obtain an initial set of compounds that present bioactivity recorded in ChEMBL against a target molecule. It is therefore recommended for cases where the user does not have a starting set of ligands to analyze. Programmatic access is provided by a Python library called ChEMBL webresource client[2].
 
-The protocol filters the compounds according to the following parameters:
--	Uniprot ID: Uniprot code of the target molecule.
+Compounds are filtered according to the following parameters:
+-	**Uniprot ID**: Uniprot code of the target molecule.
 
--	Assay type: ChEMBL includes six different types of assays, “biological assays are experimental methods for assessing the presence, localization, or biological activity of a substance in living cells and biological matrices”:
+-	**Assay type**: ChEMBL includes six different types of assays, “biological assays are experimental methods for assessing the presence, localization, or biological activity of a substance in living cells and biological matrices”:
 
 a)	Binding (B): it is based on the binding of ligand molecules to receptors, antibodies, or other macromolecules. This type of assays obtain data for measuring binding of compound to a molecular target, e.g.  Ki, IC50, Kd.
 
@@ -26,7 +26,7 @@ f)	Unclassified (U): those assays which cannot be included in the rest of type a
 
 In case that the chosen assay type is Binding, which is recommended, the next parameter is the Bioactivity measure. 
 
--	Bioactivity measure:
+-	**Bioactivity measure**:
  
 a)	IC50: (Half maximal inhibitory concentration) indicates the required concentration of a compound to inhibit a biological process by 50%. The lower the IC50 value, the higher the compound bioactivity. 
 
@@ -36,9 +36,9 @@ c)	Kd: dissociation constant, this term is generic and describes the binding aff
 
 d)	Ki: inhibition constant, the term is equivalent to the dissociation constant (Kd), but it is used when the molecule for which bioactivity is measured is an inhibitor.
 
--	Target type: it is highly advisable that the chosen target type is "SINGLE PROTEIN", as the aim of the LVBS is to find compounds that have activity on a single target. Although it is possible to choose between other options.
+-	**Target type**: it is highly advisable that the chosen target type is "SINGLE PROTEIN", as the aim of the LVBS is to find compounds that have activity on a single target. Although it is possible to choose between other options.
 
-- Organism of compound origin: it is recommended to choose human proteins; since the ultimate goal is to obtain possible molecules to be used as human drugs.
+- **Organism of compound origin**: it is recommended to choose human proteins; since the ultimate goal is to obtain possible molecules to be used as human drugs.
 
 
 The user will specify the search according to these parameters using the GUI of the protocol. In cases where the type of assay chosen is a Binding assay, the script undertakes the following steps: firstly, it retrieves the ChEMBL ID of the compound with the highest affinity on the target; then, it obtains the bioactivity data of the affine compound similar molecules and filters them according to assay type, bioactivity measure, target type and organism of compound origin fields. 
