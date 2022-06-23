@@ -1,4 +1,4 @@
-PDB access and ligand extraction
+# **PDB access and ligand extraction**
 
 <img width="405" alt="Captura de pantalla 2022-05-29 a las 21 44 24" src="https://user-images.githubusercontent.com/83068588/175141769-792a9b8a-e053-4be5-b778-06b8e0956e8d.png">
 
@@ -10,26 +10,27 @@ Aditionally, it presents some modifications in order to automatizate the process
 Protein Data Bank (PDB) is a public and supervised (Worldwide Protein Data Bank) database that stores the three-dimensional (3D) structure of different nucleic acids and proteins. 
 These structures are provided by different biologists and biochemists from all over the world who obtain them through different techniques such as magnetic/nuclear resonance, X-ray crystallography or electron microscopy.
 
-The Scipion protocol is focused on the search and extraction of ligands that bind to a target by PDB programmatically accessing, and filtering the structures it provides when we submit the target protein Uniprot ID. The objective of the protocol is to obtain a set of ligands that attach to the target protein at the same binding site in order to subsequently obtain a consensus pharmacophore. 
+The Scipion protocol is focused on the search and extraction of ligands that bind a target by PDB programmatically access, and filtering the structures it provides when we submit the target protein Uniprot ID. The objective is to obtain a set of ligands that attach to the target protein at the same binding site in order to subsequently obtain a consensus pharmacophore. 
 The fields used for filtering are: 
--	Uniprot ID of the target protein.
+-	**Uniprot ID** of the target protein.
 
--	Experimental method: structure determination method, among the possible options are X-RAY DIFFRACTION, SOLUTION NMR, ELECTRON MICROSCOPY, etc or None, in case the experimental technique is not specified.
+-	**Experimental method**: structure determination method, among the possible options are X-RAY DIFFRACTION, SOLUTION NMR, ELECTRON MICROSCOPY, etc or None, in case the experimental technique is not specified.
 
--	Minimum molecular weight of the ligand associated with the structure. 
+-	**Minimum molecular weight** of the ligand associated with the structure. 
 
--	Quality of the structure: the lower the angstrom resolution of the structure, the higher the quality.
+-	**Quality of the structure**: the lower the angstrom resolution of the structure, the higher the quality.
 
--	Number of structure chains: it is recommended to set the value of this field to 1, as it simplifies the processing of the structure and the search.
+-	**Number of structure chains**: it is recommended to set the value of this field to 1, as it simplifies the processing of the structure and the search.
 
--	Date of deposition: this field is enabled to ensure the reproducibility of the screening; the user sets a date after which any structure that is uploaded on the database will not be considered. In the protocol the user must choose a year and the date that will be passed to the search criteria is January 1st of the year set.
+-	**Date of deposition**: this field is enabled to ensure the reproducibility of the screening; the user sets a date after which any structure that is uploaded on the database will not be considered. In the protocol the user must choose a year and the date that will be passed to the search criteria is January 1st of the year set.
 
--	Number of final extracted ligands.
+-	**Number of final extracted ligands**.
 
 
 The output of the protocol is the generation of different SetOfSmallMolecules objects that will be made up by the ligands that have been grouped in the same cluster; in other words, there will be as many sets as clusters are obtained. 
 Moreover, each molecule includes its canonical SMILES and the structure of its target protein as attributes, so that the binding site can be visualized and allows the user to check the clustering performed by the script.
 
+No additional installation is required apart from Scipion-chem own installation, all the necessary software to use the protocol is installed and launched with Scipion-chem.
 
 [1] T008 · Protein data acquisition: Protein Data Bank (PDB). (s/f). Volkamerlab.Org. Recuperado el 22 de junio de 2022, de https://projects.volkamerlab.org/teachopencadd/talktorials/T008_query_pdb.html
 
